@@ -24,7 +24,7 @@ def get_upcoming_birthdays(slovar):
                 this_year_birth = find_next_weekday(this_year_birth, 0)
             congratulation = this_year_birth.strftime("%Y.%m.%d")
             upcoming_birth.append({"name": kolega["name"], "congratulation_date": congratulation})
-            return upcoming_birth
+    return upcoming_birth
 users = [
     {"name": "John Doe", "birthday": "1985.03.8"},
     {"name": "Jane Smith", "birthday": "1990.01.27"}
